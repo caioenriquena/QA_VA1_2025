@@ -8,6 +8,8 @@ Esta aplicação permite calcular os custos totais para registrar um imóvel e u
 
 ### Estrutura do projeto
 
+
+
 calculadora_custos_cartorio/
 │   app_cartorio.py
 │   executar_calculo.py
@@ -16,6 +18,10 @@ calculadora_custos_cartorio/
 │
 └───tests/
 └───test_app_cartorio.py
+
+
+
+
 
 Exemplo de uso da classe CalculadoraCustosRegistro:
 
