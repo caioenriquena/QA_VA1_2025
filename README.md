@@ -60,4 +60,46 @@ A execução dos testes com o pytest-cov atinge 93% de cobertura de código.
 Tecnologias e Bibliotecas Utilizadas
 
 Python 3.10+, pytest, pytest-cov
-    
+
+Como instalar e executar
+
+Pré-requisitos: Python 3 e Git instalados.
+
+1. Clone este repositório:
+    https://github.com/caioenriquena/QA_VA1_2025
+
+    cd calculadora-custos-cartorio
+
+2. Crie um ambiente virtual e o ative (recomendado):
+Bash
+
+# Para macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# Para Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+
+3. Instale as bibliotecas para teste:
+
+A aplicação principal não precisa de bibliotecas externas, mas os testes sim.
+Bash
+
+pip install pytest pytest-cov
+
+4. Para executar a simulação de exemplo:
+Bash
+
+python3 executar_calculo.py
+
+5. Para executar os testes e ver o relatório de cobertura:
+Bash
+
+python3 -m pytest --cov=app_cartorio
+
+6. Para gerar um relatório de cobertura em HTML:
+Bash
+
+python3 -m pytest --cov=app_cartorio --cov-report=html
